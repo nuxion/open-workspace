@@ -1,8 +1,13 @@
 # Its' very important that you be careful with the
 # names in your layout path file and workspace name, 
 # because to take the values, the script use grep rules 
+
+# The same name that is defined in the i3 config file
 workspaceName="2:"
+# full path to the json layout
 layoutName=/home/nuxion/.config/i3/workspace2_cv_dev.json
+# the var name must be WM_CLASS, 
+# the same if i call manually i3-msg to exec specific command
 app=kate
 app=google-chrome
 app=i3-sensible-terminal
