@@ -2,17 +2,18 @@
 # script for open and setup workspaces in i3wm 
 # using i3-msg command. 
 
-# VARS #
-home="/home/nuxion"
+## VARS ##
 workspace=$1
-pathConfigs=$home"/Projects/scripts/i3wm_workspace"
+# Change this var
+home="/home/nuxion" 
+# Change this var
+pathConfigs=$home"/Projects/scripts/open-workspace"
 fullpath=$pathConfigs/$workspace.props
 
-
-#POSIX definition of function
+## FUNCTIONS ##
 openApps () {
-    # with this function, we are to list all apps
-    # to prepare for send to i3-msg command 
+    # with this function, we list all apps
+    # to prepare for execute i3-msg command 
     for app in `cat $fullpath | grep app | awk -F "=" '{print $2}'`
     do 
         echo $line
