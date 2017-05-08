@@ -1,0 +1,9 @@
+# Its' very important that you be careful with the
+# names in your layout path file and workspace name, 
+# because to take the values, the script use grep rules 
+workspaceName:4
+layoutName:/home/nuxion/.config/i3/workspace2_cv_dev.json
+app:kate
+app:google-chrome
+app:i3-sensible-terminal
+app:i3-sensible-terminal
